@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "jdoe@yahoo.com",
+      "password": "123abc",
+      "balance": 0,
+      "deposit": 0,
+      "withdrawal": 0
+    },
+    {
+      "id": 2,
+      "firstname": "Jane",
+      "lastname": "Doe",
+      "email": "jdoe@yahoo.com",
+      "password": "456def",
+      "balance": 0,
+      "deposit": 0,
+      "withdrawal": 0
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "username": "admin1",
+      "password": "admin"
+    }
+  ]
+}
