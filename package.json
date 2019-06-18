@@ -1,0 +1,19 @@
+{
+  "name": "online-saving-solution",
+  "version": "1.0.0",
+  "description": "An online saving platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThaLeprechaun/Online-Saving-Solution.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThaLeprechaun/Online-Saving-Solution/issues"
+  },
+  "homepage": "https://github.com/ThaLeprechaun/Online-Saving-Solution#readme"
+}
