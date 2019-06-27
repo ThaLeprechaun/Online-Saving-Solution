@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../css/account-style.css">
+  <link rel="icon" href="../images/icon_pig.png">
+  <title>Create An Account</title>
+</head>
+<body>
+  <h2>Piggy Bank</h2>
+    <form method="POST" action="/online-savings-solution/db.json">
+        <div class="container">
+          <h2>Create An Account</h2>
+          <div class="groupfields">
+            <label>Firstname</label>
+            <input type="text" name="firstname" placeholder="Enter Firstname" id="firstname" class="input">
+            <div class="error" id="usererror"></div>
+          </div>
+
+          <div class="groupfields">
+            <label>Lastname</label>
+            <input type="text" name="lastname" placeholder="Enter Lastname" id="lastname" class="input">
+            <div class="error" id="usererror"></div>
+          </div>
+    
+          <div class="groupfields">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter Email" id="emailId" class="input">
+            <div class="error" id="emailerror"></div>
+          </div>
+    
+          <div class="groupfields">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password" id="mypassword" class="input">
+            <div class="error" id="passworderror"></div>
+          </div>
+    
+          <div class="call-to-action">
+            <input type="button" name="submit" id="submit" value="Create Account">
+            <span>By clicking "Create Account", you agree that you have read the <a href="#">terms of service</a> and <a href="#">privacy policy</a></span>
+          </div>
+        </div>
+    
+        <div class="bottom">
+          <span>Already have an account?<a href="user-login.html"> Log In</a></span>
+        </div>
+      </form>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="../js/create-account.js"></script>
+</body>
+</html>

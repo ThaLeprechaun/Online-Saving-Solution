@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../images/icon_pig.png">
+  <title>Piggy Bank</title>
+</head>
+<body>
+  <div id="header">
+		<div class="leftNav">
+      <a href="#">Piggy Bank</a>
+      <a href="../../index.html" id="log">Log Out</a>
+    </div>
+	</div>
+
+	<div id="main">
+		<div class="leftpane">
+      <a href="./user-dashboard.html">Home</a>
+      <a href="./user-deposit.html">Deposit Money</a>
+      <a href="./user-withdraw.html">Withdraw Money</a>
+      <a href="#">Transactions</a>
+      <a href="./settings.html">Settings</a>
+    </div>
+
+    <div class="activities" id="activities"> 
+      <div class="container">
+        <div class="content" id="content">
+        <h1>Transaction History Goes Here</h1>
+        <div id="display-trans">
+          <table id="trans">
+            <thead>
+              <tr>
+                  <th>S/N</th>
+                <th>Deposits</th>
+                <th>Withdrawals</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="contents">
+
+            </tbody>
+            <tfoot id="show-balance"></tfoot>
+          </table>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>	
+  <div class="footer"><a href="#">&#169 2019 All Rights Reserved</a></div>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="../js/user-transactions.js"></script>
+</body>
+</html>

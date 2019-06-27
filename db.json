@@ -7,25 +7,25 @@
       "email": "jdoe@yahoo.com",
       "password": "123abc",
       "balance": 0,
-      "deposit": 0,
-      "withdrawal": 0
+      "transactions": "[]"
     },
     {
       "id": 2,
       "firstname": "Jane",
       "lastname": "Doe",
-      "email": "jdoe@yahoo.com",
-      "password": "456def",
+      "email": "janedoe@yahoo.com",
+      "password": "456abc",
       "balance": 0,
-      "deposit": 0,
-      "withdrawal": 0
-    }
-  ],
-  "admin": [
+      "transactions": "[]"
+    },
     {
-      "id": 1,
-      "username": "admin1",
-      "password": "admin"
+      "firstname": "paul",
+      "lastname": "ryan",
+      "email": "pryan@gmail.com",
+      "password": "pryan",
+      "balance": "0",
+      "transactions": "[]",
+      "id": 3
     }
   ]
 }

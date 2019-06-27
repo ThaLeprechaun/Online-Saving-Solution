@@ -1,0 +1,258 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	text-decoration: none;
+}
+body{
+	font-family: "Quattrocento sans", sans-serif;
+	font-size: 17px;
+	line-height: 19px;
+	color:black;
+	word-spacing: 2px;
+	background-color: whitesmoke;
+}
+
+#header{
+	width: 100%;
+	float: left;
+	background: ghostwhite;
+	position: fixed;
+  opacity: 0.9;
+}
+.leftNav{
+	width: 100%;
+	float: left;
+	margin: 0px 30px 0px 20px;
+	padding: 0px;
+}
+.leftNav a{
+	padding: 10px 20px;
+	margin: 10px 40px 10px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	color: black;
+}
+.leftNav a:hover{
+	color: #4CAF50;
+}
+.leftNav #log{
+	float: right;
+}
+#main{
+	width: 100%;
+	float: left;
+	margin-top: 60px;
+}
+.leftpane{
+	width: 20%;
+	float: left;
+	background: white;
+	margin: 10px 10px 10px 20px;
+	position: fixed;
+	overflow-x: hidden;
+	border-radius: 5px;
+	box-shadow: 4px 4px rgba(0, 0, 0, 0.09);
+}
+.leftpane a{
+	display: block;
+	padding: 20px;
+	color: black;
+}
+.leftpane a:hover{
+	background-color: #4CAF50;
+	color: white;
+	transition: 0.5s ease-out;
+}
+.leftpane div{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin: -5px 20px 0 0;
+  text-align: center;
+  color: white;
+  float: right;
+  border-radius: 60%;
+}
+.activities{
+  width: 54%;
+	float: left;
+	margin: 10px;
+  margin-left: 300px;
+}
+.container{
+	width: 100%;
+	float: left;
+	margin-bottom: 5px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 4px 4px rgba(0, 0, 0, 0.09);
+}
+.container h1{
+	width: 100%;
+	float: left;
+	border-bottom: 3px solid lightsteelblue;
+	padding: 10px;
+	font-size: 18px;
+  color: #4CAF50;
+  text-align: center;
+}
+.content{
+	padding: 20px;
+	width: 100%;
+	float: left;
+	margin: 1px 0;
+}
+.content-option{
+  width: 70px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  padding: 5px;
+  float: right;
+  margin: 30px 10px 0 0;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: white;
+}
+.content-option:hover{
+  background-color: lightsteelblue;
+  color: black;
+}
+.nav-menu-right{
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+.sign-up-button{
+  padding: 16px;
+  background: #4CAF50;
+}
+.nav-menu{
+	width: 100%;
+	float: left;
+	margin: 0px 30px 0px 20px;
+	padding: 0px;
+}
+.nav-menu a{
+	padding: 10px 20px;
+	margin: 10px 40px 10px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	color: black;
+}
+.nav-menu a:hover{
+	color: green;
+}
+#main{
+	width: 100%;
+	float: left;
+	margin-top: 60px;
+}
+.banner-container{
+  max-width: 100%;
+  height: 400px;
+  margin: 0px auto;
+  position: relative;
+  z-index: -1;
+}
+.banner-container>.banner{
+  background-image: url(../images/piggybank.jpeg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  z-index: 1;
+}
+.words-on-banner{
+  font-size: 36px;
+  font-weight: 300px;
+  width: 40%;
+  position: relative;
+  height: auto;
+  background-color: transparent;
+  text-align: left;
+  color: black;
+  float: left;
+  margin: 200px 20px 0px 90px;
+}
+.talks{
+	font-family: 'Cinzel Decorative';
+	font-size: 20px;
+	font-style: italic;
+  font-weight: normal;
+  width: 40%;
+  position: relative;
+	height: auto;
+	background-color: transparent;
+	text-align: left;
+	color: black;
+	margin: 250px 20px 0 90px;
+}
+#wrapper{
+	text-align: center;
+	margin: 30px 300px 10px 300px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.first-wrapper{
+  width: 100%;
+  height: 100%;
+}
+.footer{
+  position: fixed;
+  bottom: 0px;
+  overflow: hide;
+  width: 100%;
+  height: 30px;
+  background-color: ghostwhite;
+  text-align: center;
+  padding: 7px;
+}
+.footer a{
+  color: black;
+  font-size: 14px;
+  word-spacing: 5px;
+}
+.footer a:hover{
+  color: #4CAF50;
+}
+
+
+table{
+  font-family: "Quattrocento sans", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#contents td th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#contents tr:nth-child(odd){background-color: #f2f2f2;}
+
+thead{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ddd;
+    color: black;
+}
+
+#result{
+	margin: 20px 0 0px 10px;
+}
+.submit-amount{
+  background-color: #4CAF50;
+  color: white;
+  font-size: 15px;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+  padding: 5px;
+  float: left;
+  width: 120px;
+  text-align: center;
+}
+.submit-amount:hover{
+	background-color: grey;
+}

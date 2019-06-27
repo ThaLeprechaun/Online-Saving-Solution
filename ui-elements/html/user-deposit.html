@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../images/icon_pig.png">
+  <title>Piggy Bank</title>
+</head>
+<body>
+  <div id="header">
+		<div class="leftNav">
+      <a href="#">Piggy Bank</a>
+      <a href="../../index.html" id="log">Log Out</a>
+    </div>
+	</div>
+
+	<div id="main">
+		<div class="leftpane">
+      <a href="./user-dashboard.html">Home</a>
+      <a href="#">Deposit Money</a>
+      <a href="./user-withdraw.html">Withdraw Money</a>
+      <a href="./user-transaction.html">Transactions</a>
+      <a href="./settings.html">Settings</a>
+    </div>
+
+    <div class="activities" id="activities"> 
+      <div class="container">
+        <h1>Deposit Money</h1>
+        <div class="content" id="content">
+        <form method="POST">
+          <div class="groupfields">
+            <label>Type in Amount</label>
+            <input type="number" name="deposit" placeholder="Enter Amount" id="deposit" class="input">
+            <div class="error" id="usererror"></div>
+          </div>
+          <input type="button" name="submit" id="submit-amount" class="submit-amount" value="Deposit">
+          <div id="result"></div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>	
+  <div class="footer"><a href="#">&#169 2019 All Rights Reserved</a></div>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="../js/user-deposit.js"></script>
+</body>
+</html>

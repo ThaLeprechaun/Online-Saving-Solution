@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/account-style.css">
+  <link rel="icon" href="../images/icon_pig.png">
+  <title>Login to PiggyBank</title>
+</head>
+<body>
+  <h2>Piggy Bank</h2>
+  <form method="POST">
+      <div class="container">
+        <h2>Log In</h2>
+        <div class="groupfields">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Enter Email" id="emailId" class="input">
+          <div class="error" id="emailerror"></div>
+        </div>
+  
+        <div class="groupfields">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="Enter password" id="mypassword" class="input">
+          <div class="error" id="passworderror"></div>
+        </div>
+  
+        <div class="call-to-action">
+          <input type="button" name="submit" id="submit" value="Continue">
+        </div>
+      </div>
+  
+      <div class="bottom">
+        <span>New to Piggy Bank?</span>
+        <a href="create-account.html"><input type="button" name="submit" id="submit2" value="Create account"></a>
+      </div>
+  </form>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>
