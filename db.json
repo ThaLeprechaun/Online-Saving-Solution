@@ -1,13 +1,13 @@
 {
   "users": [
     {
-      "id": 1,
       "firstname": "John",
       "lastname": "Doe",
       "email": "jdoe@yahoo.com",
       "password": "123abc",
-      "balance": 0,
-      "transactions": "[]"
+      "balance": "6400",
+      "transactions": "[{\"id\":1,\"deposit\":1000,\"transaction_date\":\"27-05-2019\"},{\"id\":2,\"deposit\":1000,\"transaction_date\":\"27-05-2019\"},{\"id\":3,\"deposit\":1000,\"transaction_date\":\"27-05-2019\"},{\"id\":4,\"deposit\":1000,\"transaction_date\":\"27-05-2019\"},{\"id\":5,\"deposit\":1000,\"transaction_date\":\"27-05-2019\"},{\"id\":6,\"deposit\":1000,\"transaction_date\":\"27-05-2019\"},{\"id\":7,\"deposit\":1000,\"transaction_date\":\"27-05-2019\"},{\"id\":8,\"deposit\":1000,\"transaction_date\":\"27-05-2019\"},{\"id\":9,\"deposit\":1000,\"transaction_date\":\"27-05-2019\"},{\"id\":10,\"deposit\":1000,\"transaction_date\":\"27-05-2019\"},{\"id\":11,\"withdraw\":500,\"transaction_date\":\"2019-06-27T22:55:57.821Z\"},{\"id\":12,\"withdraw\":500,\"transaction_date\":\"2019-06-27T22:55:58.746Z\"},{\"id\":13,\"withdraw\":500,\"transaction_date\":\"2019-06-27T22:55:59.518Z\"},{\"id\":14,\"withdraw\":500,\"transaction_date\":\"2019-06-27T22:56:00.007Z\"},{\"id\":15,\"withdraw\":500,\"transaction_date\":\"2019-06-27T22:56:00.455Z\"},{\"id\":16,\"withdraw\":500,\"transaction_date\":\"2019-06-27T22:56:01.358Z\"},{\"id\":17,\"withdraw\":500,\"transaction_date\":\"2019-06-27T22:56:02.050Z\"},{\"id\":18,\"withdraw\":100,\"transaction_date\":\"28-05-2019\"}]",
+      "id": 1
     },
     {
       "id": 2,
@@ -26,6 +26,15 @@
       "balance": "0",
       "transactions": "[]",
       "id": 3
+    },
+    {
+      "firstname": "usman",
+      "lastname": "olanrewaju",
+      "email": "oakinbiyiusman@gmail.com",
+      "password": "usman",
+      "balance": "4000",
+      "transactions": "[{\"id\":1,\"deposit\":3000,\"transaction_date\":\"27-05-2019\"}]",
+      "id": 4
     }
   ]
 }

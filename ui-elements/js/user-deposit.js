@@ -1,5 +1,4 @@
 $(function () {
-  var transArr = [];
   let currentUser = localStorage.getItem("email");
   console.log(currentUser);
 
@@ -23,7 +22,6 @@ $(function () {
     let url =  `http://localhost:3000/users/?email=${currentUser}`;
     let result = $("#result");
     let transaction_date = today;
-    let id = transArr.length + 1;
     if (amount == null || amount == "" || !(amount > 0)) {
       alert("Invalid amount");
       return false;
@@ -34,9 +32,12 @@ $(function () {
         url: url,
       }).done((data)=>{
       console.log(data);
+      var transactionsArray = data[0]["transactions"];
+      var newObj = JSON.parse(transactionsArray);
+      var id = newObj.length + 1;
       $("#deposit").each(function(){obj['id'] = id,obj['deposit'] = amount,obj['transaction_date'] = transaction_date;});
-      JSON.stringify(transArr.push(obj));
-      console.log(JSON.stringify(transArr));
+      newObj.push(obj);
+      transactionsArray = JSON.stringify(newObj);
 
       if (data[0].hasOwnProperty("balance")) {
         var newBalance = 0;
@@ -56,7 +57,7 @@ $(function () {
       email: data[0].email,
       password: data[0].password,
       balance: newBalance,
-      transactions: JSON.stringify(transArr)
+      transactions: transactionsArray
       }
       }).done((data)=>{
           console.log(data);

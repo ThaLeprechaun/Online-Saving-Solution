@@ -21,7 +21,7 @@ $(function () {
     let amount = Number($("#withdraw").val());
     let url = `http://localhost:3000/users/?email=${currentUser}`;
     let result = $("#result");
-    let transaction_date = new Date();
+    let transaction_date = today;
     let id = transArr.length + 1;
     if (amount == null || amount == "" || !(amount > 0)) {
       alert("Invalid amount");
@@ -35,9 +35,12 @@ $(function () {
       if (data[0].balance < amount) {
         return alert("Insufficient funds");
       }
+      var transactionsArray = data[0]["transactions"];
+      var newObj = JSON.parse(transactionsArray);
+      var id = newObj.length + 1;
       $("#withdraw").each(function(){obj['id'] = id; obj['withdraw'] = amount; obj['transaction_date'] = transaction_date});
-      JSON.stringify(transArr.push(obj));
-      console.log(JSON.stringify(transArr));
+      newObj.push(obj);
+      transactionsArray = JSON.stringify(newObj);
       if (data[0].hasOwnProperty("balance")) {
         var newWithdrawal = Number(data[0].balance) - amount;
         newBalance = newWithdrawal;
@@ -55,7 +58,7 @@ $(function () {
           email: data[0].email,
           password: data[0].password,
           balance: newBalance,
-          transactions: JSON.stringify(transArr)
+          transactions: transactionsArray
         }
       }).done(()=>{
         console.log(data);
